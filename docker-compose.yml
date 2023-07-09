@@ -1,0 +1,16 @@
+version: '1'
+services:
+  backend:
+    build:
+      context: ./backend/django
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+
+  frontend:
+    build:
+      context: ./frontend/react
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+
