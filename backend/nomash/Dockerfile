@@ -1,6 +1,6 @@
 FROM python:latest
 
-WORKDIR /django
+WORKDIR /nomash
 
 COPY requirements.txt .
 
