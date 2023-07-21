@@ -9,6 +9,8 @@ djangorestframework = "*"
 psycopg2-binary = "*"
 uvicorn = "*"
 django-cors-headers = "*"
+fastapi = "*"
+maturin = "*"
 
 [dev-packages]
 

@@ -25,8 +25,12 @@ SECRET_KEY = 'django-insecure-dia*#x75_zy6aet$l-)n&z*uuhaov+)o%5b^5rvqtdj#mw1$0)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost',
+                 'http://localhost',
+                 'http://localhost:8000',
+                 'http://localhost:3000']
 
+PROJECT_NAME = "nomash"
 
 # Application definition
 
@@ -38,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api',
+    'funcs',
 ]
 
 MIDDLEWARE = [

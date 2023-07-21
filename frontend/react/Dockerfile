@@ -1,7 +1,7 @@
 # Base image
 FROM node:latest
 
-WORKDIR /react
+WORKDIR /app
 
 COPY package*.json ./
 

@@ -1,21 +1,14 @@
 FROM python:latest
 
-WORKDIR /nomash
+WORKDIR /app
 
-COPY requirements.txt .
-
-RUN pip install --no-cache-dir -r requirements.txt
-
+COPY . .
 COPY Pipfile .
 COPY Pipfile.lock .
-COPY . .
 
-ENV DJANGO_SETTINGS_MODULE=nomash.settings
-ENV POSTGRES_USER=nomashadmin
-ENV POSTGRES_PASSWORD=nomash123
-ENV POSTGRES_DB=nomash
+RUN pip3 install -r requirements.txt && pip cache purge
 
 EXPOSE 8000
 
-CMD ["uvicorn", "nomash.asgi:application", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["./startup.sh"]
 
