@@ -2,7 +2,7 @@
 shopt -s nocasematch
 
 RUN_COMMAND="uvicorn"
-RUN_ARGS="api.main:app --host 0.0.0.0 --port 8000"
+RUN_ARGS="api.main:app --host :: --port 8080"
 
 DJANGO_SETTINGS_MODULE="nomash.development"
 

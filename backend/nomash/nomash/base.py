@@ -73,14 +73,14 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'django.wsgi.application'
+WSGI_APPLICATION = 'nomash.wsgi.application'
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '{}',
-        'USER': '{}',
-        'PASSWORD': '{}',
+        'NAME': 'nomash',
+        'USER': 'nomashadmin',
+        'PASSWORD': 'nomash123',
         'HOST': 'localhost',
         'PORT': '5432',
     }

@@ -1,4 +1,4 @@
-version: '1'
+version: '3'
 services:
   backend:
     build:
@@ -9,7 +9,7 @@ services:
 
   frontend:
     build:
-      context: ./frontend/react
+      context: ./frontend/next
       dockerfile: Dockerfile
     ports:
       - 3000:3000
